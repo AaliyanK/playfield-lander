@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function ImageCard({
   title,
   desc,
@@ -11,9 +13,11 @@ export function ImageCard({
     <article className="border border-[color:var(--rule)] overflow-hidden shadow-[0_1px_0_rgba(0,0,0,0.03)]">
       <div className="aspect-[16/9] bg-[#EEECE5] flex items-center justify-center overflow-hidden">
         {imageSrc ? (
-          <img
+          <Image
             src={imageSrc}
             alt={title}
+            width={400}
+            height={225}
             className="w-full h-full object-contain p-2"
           />
         ) : (

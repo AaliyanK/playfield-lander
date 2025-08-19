@@ -16,7 +16,6 @@ export default function ValueCard({
   description,
   icon: Icon,
   index,
-  color,
 }: ValueCardProps) {
   return (
     <motion.div

@@ -6,9 +6,12 @@ import { InertiaPlugin } from "gsap/InertiaPlugin";
 
 gsap.registerPlugin(InertiaPlugin);
 
-const throttle = (func: Function, limit: number) => {
+const throttle = <T extends (...args: unknown[]) => void>(
+  func: T,
+  limit: number
+) => {
   let lastCall = 0;
-  return function (...args: any[]) {
+  return function (this: unknown, ...args: Parameters<T>) {
     const now = performance.now();
     if (now - lastCall >= limit) {
       lastCall = now;
@@ -60,7 +63,15 @@ const DotGrid = ({
 }: DotGridProps) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const dotsRef = useRef<any[]>([]);
+  const dotsRef = useRef<
+    Array<{
+      cx: number;
+      cy: number;
+      xOffset: number;
+      yOffset: number;
+      _inertiaApplied: boolean;
+    }>
+  >([]);
   const pointerRef = useRef({
     x: 0,
     y: 0,
@@ -171,15 +182,16 @@ const DotGrid = ({
   useEffect(() => {
     buildGrid();
     let ro: ResizeObserver | null = null;
-    if ("ResizeObserver" in window) {
+    if (typeof window !== "undefined" && "ResizeObserver" in window) {
       ro = new ResizeObserver(buildGrid);
       wrapperRef.current && ro.observe(wrapperRef.current);
-    } else {
-      window.addEventListener("resize", buildGrid);
+    } else if (typeof window !== "undefined") {
+      window.addEventListener("resize", buildGrid as EventListener);
     }
     return () => {
       if (ro) ro.disconnect();
-      else window.removeEventListener("resize", buildGrid);
+      else if (typeof window !== "undefined")
+        window.removeEventListener("resize", buildGrid as EventListener);
     };
   }, [buildGrid]);
 
