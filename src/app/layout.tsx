@@ -23,7 +23,9 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://playfield.ai"),
+  metadataBase: new URL(
+    "https://playfield-lander-224jedm5b-aalliyans-projects.vercel.app"
+  ),
   alternates: {
     canonical: "/",
   },
@@ -31,7 +33,7 @@ export const metadata: Metadata = {
     title: "Playfield - Superintelligence for Enterprise",
     description:
       "Map your systems. Generate interfaces. Run securely. Enterprise superintelligence platform that integrates with your internal systems and builds a reasoning map across them.",
-    url: "https://playfield.ai",
+    url: "https://playfield-lander-224jedm5b-aalliyans-projects.vercel.app",
     siteName: "Playfield",
     locale: "en_US",
     type: "website",
