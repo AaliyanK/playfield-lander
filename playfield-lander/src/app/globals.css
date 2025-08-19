@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f5f4ef;
+  --ink: #0b0b0b;
+  --rule: #dcd9cf;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-signifier), "Times New Roman", Times, serif;
+}
+
+p,
+li,
+small {
+  font-family: var(--font-consolas), ui-monospace, SFMono-Regular, Menlo, Monaco,
+    "Liberation Mono", monospace;
+}
+
+.paper-rail {
+  background-image: radial-gradient(var(--ink) 1px, transparent 1px);
+  background-size: 8px 16px;
+  background-position: left 10px top;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.brand-name {
+  font-family: var(--font-signifier), "Times New Roman", Times, serif;
+}
