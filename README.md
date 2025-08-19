@@ -47,10 +47,12 @@ src/
 ## 🎨 Design System
 
 ### Typography
+
 - **Signifier**: Primary font for headings and brand elements
 - **Consolas**: Monospace font for technical content
 
 ### Colors
+
 - Clean white background with subtle borders
 - Black text with varying opacity levels
 - Minimal color palette focusing on content
@@ -58,17 +60,20 @@ src/
 ## 🚀 Getting Started
 
 1. **Clone the repository**
+
    ```bash
    git clone <repository-url>
    cd playfield-lander
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Run the development server**
+
    ```bash
    npm run dev
    ```
@@ -101,15 +106,17 @@ The landing page showcases four key features of Playfield's enterprise superinte
 ## 🔧 Customization
 
 ### Adding New Features
+
 1. Create new components in `src/components/`
 2. Import and use in `src/app/page.tsx`
 3. Add any required images to `public/images/`
 
 ### Updating Content
+
 - Main content is in `src/app/page.tsx`
 - Product images are in `public/images/`
 - Fonts are configured in `src/lib/fonts.ts`
 
 ## 📄 License
 
-© 2025 Playfield. All rights reserved.
+© 2025 Playfield.

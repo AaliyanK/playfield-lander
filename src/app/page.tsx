@@ -27,10 +27,10 @@ export default function Home() {
         >
           We&apos;re a product & research lab building models that interact with
           your enterprise systems. From reading/writing data across applications
-          to generating interfaces to interact with them, we believe in a future
-          where operators in an enterprise only have to interact with one model
-          to complete all their tasks, and software/interfaces are generated
-          just-in-time to carry out the intent of the operator.
+          to generating interfaces for you to interact with, we believe in a
+          future where operators in an enterprise only have to interact with one
+          model to complete all their tasks, and software/interfaces are
+          generated just-in-time to carry out the intent of the operator.
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 6 }}
@@ -39,10 +39,10 @@ export default function Home() {
           className="mt-3 text-black/80 text-[15px] leading-relaxed"
         >
           We&apos;re focusing on post-training coding models to work with your
-          systems, rather than building static agent workflows, as code is the
-          most verifiable model output for RL today. It gives us a way to train
-          models to deeply understand how you do work in your enterprise and
-          deliver to each customer their own custom superintelligence.
+          systems, rather than building static agent workflows. Our aim is to
+          bring RL to enterprise in order to train models to deeply understand
+          how you do your work, and deliver specialized superintelligence to our
+          customers. Code is the most verifiable model output for RL today.
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 6 }}
@@ -50,7 +50,22 @@ export default function Home() {
           transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
           className="mt-3 text-black/80 text-[15px] leading-relaxed"
         >
-          Thanks,{" "}
+          We look forward to sharing more with you in the near future.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.25, duration: 0.6, ease: "easeOut" }}
+          className="mt-3 text-black/80 text-[15px] leading-relaxed"
+        >
+          Thanks,
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
+          className="mt-1 text-black/80 text-[15px] leading-relaxed"
+        >
           <a
             href="https://www.linkedin.com/in/zayaan-mulla-95412b1b1/"
             target="_blank"
@@ -109,7 +124,7 @@ export default function Home() {
           >
             <ImageCard
               title="RL as a Service"
-              desc=" We work with you to continuously fine tune models to generate more accurate code relative to the needs of your enterprise. This becomes your enterprise super-intelligence."
+              desc=" We work with you to build evals and continuously fine tune models to generate code that is more accurate relative to the needs of your enterprise. This becomes your enterprise super-intelligence."
               imageSrc="/images/rl-service.png"
             />
           </motion.div>
@@ -162,7 +177,7 @@ export default function Home() {
       <footer className="mx-auto max-w-[880px] px-6 py-8 border-t border-[color:var(--rule)]">
         <div className="text-center">
           <p className="text-black/60 text-[13px] font-mono">
-            © 2025 Playfield. All rights reserved.
+            © 2025 Playfield.
           </p>
           {/* <p className="text-black/60 text-[13px] font-mono mt-1">
             hello@playfield.ai
