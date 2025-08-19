@@ -38,11 +38,36 @@ export default function Home() {
           transition={{ delay: 0.15, duration: 0.6, ease: "easeOut" }}
           className="mt-3 text-black/80 text-[15px] leading-relaxed"
         >
-          We&apos;re focusing on coding models as a way to build this future,
-          rather than static agent/workflow builders, as code is the most
-          verifiable model output for RL today. It gives us a way to train
+          We&apos;re focusing on post-training coding models to work with your
+          systems, rather than building static agent workflows, as code is the
+          most verifiable model output for RL today. It gives us a way to train
           models to deeply understand how you do work in your enterprise and
           deliver to each customer their own custom superintelligence.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
+          className="mt-3 text-black/80 text-[15px] leading-relaxed"
+        >
+          Thanks,{" "}
+          <a
+            href="https://www.linkedin.com/in/zayaan-mulla-95412b1b1/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-black transition-colors"
+          >
+            Zayaan
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://www.linkedin.com/in/parsa-bahrami/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-black transition-colors"
+          >
+            Parsa
+          </a>
         </motion.p>
         <motion.hr
           initial={{ opacity: 0 }}
