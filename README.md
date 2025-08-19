@@ -1,146 +1,115 @@
-# Playfield Landing Page
+# Playfield - Superintelligence for Enterprise
 
-A modern, animated landing page for Playfield - Superintelligence for Enterprise.
+A modern, clean landing page for Playfield, showcasing our enterprise superintelligence platform.
 
 ## 🚀 Features
 
-- **Modern Design**: Clean, minimal design with lots of whitespace
-- **Smooth Animations**: Framer Motion animations throughout
-- **Responsive**: Works perfectly on all devices
-- **Fast Performance**: Built with Next.js 15 and Tailwind CSS v4
-- **Smooth Scrolling**: Navigation links with smooth scroll behavior
-- **Professional Layout**: Enterprise-grade design and structure
+- **Clean, Modern Design**: Minimalist aesthetic with focus on content
+- **Responsive Layout**: Optimized for desktop and mobile devices
+- **Smooth Animations**: Subtle motion effects using Framer Motion
+- **Custom Typography**: Using Signifier and Consolas fonts
+- **Image Cards**: Showcase key product features with visual elements
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 15 with App Router
-- **Styling**: Tailwind CSS v4
+- **Framework**: Next.js 15.4.6 with App Router
+- **Styling**: Tailwind CSS 4
 - **Animations**: Framer Motion
-- **UI Components**: shadcn/ui
 - **Icons**: Lucide React
 - **Deployment**: Vercel
+- **Language**: TypeScript
 
 ## 📁 Project Structure
 
 ```
 src/
 ├── app/
-│   ├── globals.css          # Global styles
-│   ├── layout.tsx           # Root layout
-│   └── page.tsx             # Home page
+│   ├── layout.tsx          # Root layout with metadata
+│   ├── page.tsx            # Main landing page
+│   ├── error.tsx           # Error boundary
+│   ├── loading.tsx         # Loading component
+│   └── globals.css         # Global styles
 ├── components/
-│   ├── ui/                  # shadcn/ui components
-│   ├── Header.tsx           # Navigation header
-│   └── Footer.tsx           # Footer component
-└── lib/
-    └── utils.ts             # Utility functions
+│   ├── Nav.tsx             # Navigation component
+│   ├── ImageCard.tsx       # Feature showcase cards
+│   └── ui/                 # Reusable UI components
+│       ├── button.tsx
+│       ├── card.tsx
+│       └── badge.tsx
+├── lib/
+│   ├── fonts.ts            # Custom font configuration
+│   └── utils.ts            # Utility functions
+└── public/
+    ├── images/             # Product feature images
+    └── fonts/              # Custom font files
 ```
 
 ## 🎨 Design System
 
-- **Colors**: Black text on white/light grey backgrounds with blue accent (#0066FF)
-- **Typography**: Clean, minimal fonts with proper hierarchy
-- **Spacing**: Generous whitespace for modern feel
-- **Animations**: Subtle, smooth transitions and hover effects
+### Typography
+- **Signifier**: Primary font for headings and brand elements
+- **Consolas**: Monospace font for technical content
+
+### Colors
+- Clean white background with subtle borders
+- Black text with varying opacity levels
+- Minimal color palette focusing on content
 
 ## 🚀 Getting Started
 
-1. **Clone the repository**:
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd playfield-lander
+   ```
 
-```bash
-git clone <repository-url>
-cd playfield-lander
-```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-2. **Install dependencies**:
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
 
-```bash
-npm install
-```
-
-3. **Run the development server**:
-
-```bash
-npm run dev
-```
-
-4. **Open your browser** and navigate to `http://localhost:3000`
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 📦 Available Scripts
 
-- `npm run dev` - Start development server
+- `npm run dev` - Start development server with Turbopack
 - `npm run build` - Build for production
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
 
 ## 🌐 Deployment
 
-The site is deployed on Vercel and can be accessed at: [your-vercel-url]
+The site is automatically deployed to Vercel on every push to the main branch.
 
-### Deploy to Vercel
+**Live URL**: [https://playfield-3yhhhi26n-aalliyans-projects.vercel.app](https://playfield-3yhhhi26n-aalliyans-projects.vercel.app)
 
-1. **Build the project**:
+## 📝 Content
 
-```bash
-npm run build
-```
+The landing page showcases four key features of Playfield's enterprise superintelligence platform:
 
-2. **Deploy**:
-
-```bash
-npx vercel --prod
-```
-
-## 📱 Sections
-
-1. **Hero** - Main headline and call-to-action
-2. **Value Props** - Three key benefits
-3. **How it Works** - Three-step process
-4. **Integrations** - Supported platforms
-5. **Security** - Enterprise security features
-6. **Vision** - Company vision and mission
-7. **Contact** - Call-to-action section
-
-## 🎯 Performance
-
-- **Lighthouse Score**: 95+ across all metrics
-- **Core Web Vitals**: Optimized for performance
-- **SEO**: Proper meta tags and structure
-- **Accessibility**: WCAG 2.1 compliant
+1. **Reasoning Map of Enterprise** - Ontology that bridges systems and data
+2. **Code Gen as a Primitive** - Models trained to generate interfaces through code
+3. **RL as a Service** - Continuous fine-tuning for enterprise superintelligence
+4. **Enterprise Grade Privacy** - Secure, on-premise deployment options
 
 ## 🔧 Customization
 
-### Colors
+### Adding New Features
+1. Create new components in `src/components/`
+2. Import and use in `src/app/page.tsx`
+3. Add any required images to `public/images/`
 
-Update the color scheme in `tailwind.config.ts`:
-
-```typescript
-brand: {
-  DEFAULT: "#0066FF", // Main accent color
-  light: "#3385FF",
-  dark: "#0052CC",
-}
-```
-
-### Content
-
-Update the content in `src/app/page.tsx` for each section.
-
-### Animations
-
-Modify animation settings in the Framer Motion components.
+### Updating Content
+- Main content is in `src/app/page.tsx`
+- Product images are in `public/images/`
+- Fonts are configured in `src/lib/fonts.ts`
 
 ## 📄 License
 
-© 2024 Playfield. All rights reserved.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
----
-
-Built with ❤️ for Playfield
+© 2025 Playfield. All rights reserved.
