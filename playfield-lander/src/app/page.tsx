@@ -96,7 +96,7 @@ export default function Home() {
             <ImageCard
               title="Enterprise Grade Privacy"
               desc="We focus on seat by seat auth, on-prem/vpc deployment and security so you fully own your models."
-              imageSrc="/images/vpc-deployments.jpg"
+              imageSrc="/images/vpc-deployments.png"
             />
           </motion.div>
         </div>
