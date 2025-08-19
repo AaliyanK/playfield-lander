@@ -124,7 +124,7 @@ export default function Home() {
           >
             <ImageCard
               title="RL-as-a-Service"
-              desc=" We work with you to build evals and continuously fine tune models to generate code that is more accurate relative to the needs of your enterprise. This becomes your enterprise super-intelligence."
+              desc=" We work with you to build evals and continuously fine tune models to generate code that is more accurate relative to the needs of your enterprise. This becomes your enterprise superintelligence."
               imageSrc="/images/rl-service.png"
             />
           </motion.div>
