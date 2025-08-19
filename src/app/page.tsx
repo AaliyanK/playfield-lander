@@ -101,7 +101,7 @@ export default function Home() {
             transition={{ delay: 0.3, duration: 0.6 }}
           >
             <ImageCard
-              title="Reasoning Map of Enterprise"
+              title="Reasoning Map of your Enterprise"
               desc="The ontology that bridges your systems, data and learns from your workflows."
               imageSrc="/images/reasoning-map.png"
             />
@@ -112,7 +112,7 @@ export default function Home() {
             transition={{ delay: 0.4, duration: 0.6 }}
           >
             <ImageCard
-              title="Code Gen as a Primitive"
+              title="Code Generation as a Primitive"
               desc="Our models are trained to take actions over your ontology and generate interfaces to interact with it, through code."
               imageSrc="/images/code-gen.png"
             />
@@ -123,7 +123,7 @@ export default function Home() {
             transition={{ delay: 0.5, duration: 0.6 }}
           >
             <ImageCard
-              title="RL as a Service"
+              title="RL-as-a-Service"
               desc=" We work with you to build evals and continuously fine tune models to generate code that is more accurate relative to the needs of your enterprise. This becomes your enterprise super-intelligence."
               imageSrc="/images/rl-service.png"
             />
@@ -134,8 +134,8 @@ export default function Home() {
             transition={{ delay: 0.6, duration: 0.6 }}
           >
             <ImageCard
-              title="Enterprise Grade Privacy"
-              desc="We focus on seat by seat auth, on-prem/vpc deployment and security so you fully own your models."
+              title="Enterprise Privacy"
+              desc="We focus on seat-by-seat auth, on-prem/vpc deployment and security so you fully own your models."
               imageSrc="/images/vpc-deployments.png"
             />
           </motion.div>
